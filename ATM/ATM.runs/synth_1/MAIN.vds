@@ -1,0 +1,634 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun  5 16:24:04 2024
+# Process ID: 9540
+# Current directory: C:/facultate/proiect/ATM/ATM.runs/synth_1
+# Command line: vivado.exe -log MAIN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MAIN.tcl
+# Log file: C:/facultate/proiect/ATM/ATM.runs/synth_1/MAIN.vds
+# Journal file: C:/facultate/proiect/ATM/ATM.runs/synth_1\vivado.jou
+# Running On: ovi, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 34025 MB
+#-----------------------------------------------------------
+source MAIN.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/facultate/proiect/ATM/ATM.srcs/utils_1/imports/synth_1/sumator_1Bit.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/facultate/proiect/ATM/ATM.srcs/utils_1/imports/synth_1/sumator_1Bit.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MAIN -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1322.203 ; gain = 441.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MAIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:20]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MPG.vhd:5' bound to instance 'f1' of component 'MPG' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MPG.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MPG.vhd:11]
+INFO: [Synth 8-3491] module 'Organigrama' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:35' bound to instance 'MAPARE_ORGANIGRAMA' of component 'ORGANIGRAMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'Organigrama' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:44]
+	Parameter N bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'divizor' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:5' bound to instance 'f1' of component 'divizor' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'divizor' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:11]
+	Parameter N bound to: 50 - type: integer 
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'divizor' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Organigrama' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:44]
+INFO: [Synth 8-3491] module 'validare_pin' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:34' bound to instance 'C1' of component 'VALIDARE_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'validare_pin' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:41]
+INFO: [Synth 8-3491] module 'MEM_RAM_PIN' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:34' bound to instance 'P0' of component 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MEM_RAM_PIN' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:44]
+INFO: [Synth 8-3491] module 'MEM_RAM_PIN' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:34' bound to instance 'P1' of component 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:56]
+INFO: [Synth 8-3491] module 'MEM_RAM_PIN' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:34' bound to instance 'P2' of component 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:57]
+INFO: [Synth 8-3491] module 'MEM_RAM_PIN' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:34' bound to instance 'P3' of component 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:58]
+WARNING: [Synth 8-614] signal 'enable_verificare_pin' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'validare_pin' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:41]
+INFO: [Synth 8-3491] module 'MEM_RAM_PIN' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:34' bound to instance 'C2' of component 'MEM_RAM_PIN' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:151]
+INFO: [Synth 8-3491] module 'MEM_RAM_SUMA' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:6' bound to instance 'C3' of component 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:16]
+WARNING: [Synth 8-614] signal 'loc_pin' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'MEM_RAM_SUMA' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:16]
+INFO: [Synth 8-3491] module 'MEM_RAM_BANC' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:6' bound to instance 'C4' of component 'MEM_RAM_BANC' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'MEM_RAM_BANC' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:29]
+WARNING: [Synth 8-614] signal 'RAM_AUX' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:156]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:166]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:166]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:166]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:166]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:180]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:180]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:180]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:180]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:193]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:193]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:193]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:193]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:206]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:206]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:206]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:206]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:219]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:219]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:219]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:219]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:232]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:232]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:232]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:232]
+WARNING: [Synth 8-614] signal 'numar_bancnote' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:245]
+WARNING: [Synth 8-614] signal 'RAM' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:245]
+WARNING: [Synth 8-614] signal 'RAM_AUX1' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:245]
+WARNING: [Synth 8-614] signal 'nr_banc' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'MEM_RAM_BANC' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:29]
+INFO: [Synth 8-3491] module 'verificare_suma_cont' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:8' bound to instance 'C5' of component 'verificare_suma_cont' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'verificare_suma_cont' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:15]
+INFO: [Synth 8-3491] module 'MEM_RAM_SUMA' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:6' bound to instance 'SUMA_DIN_CONT' of component 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'verificare_suma_cont' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:15]
+INFO: [Synth 8-3491] module 'INTEROGARE_SOLD' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:8' bound to instance 'C6' of component 'INTEROGARE_SOLD' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'INTEROGARE_SOLD' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:15]
+INFO: [Synth 8-3491] module 'MEM_RAM_SUMA' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:6' bound to instance 'SUMA_CONT_CURENT' of component 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'INTEROGARE_SOLD' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:15]
+INFO: [Synth 8-3491] module 'AFISARE_SOLD_CONT' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:5' bound to instance 'c7' of component 'AFISARE_SOLD_CONT' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'AFISARE_SOLD_CONT' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:12]
+INFO: [Synth 8-3491] module 'divizor' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:5' bound to instance 'u0' of component 'divizor' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'divizor__parameterized1' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:11]
+	Parameter N bound to: 5000 - type: integer 
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'divizor__parameterized1' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/divizor.vhd:11]
+INFO: [Synth 8-3491] module 'Bin2BCD' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/bcd.vhd:5' bound to instance 'u1' of component 'bin2bcd' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'Bin2BCD' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/bcd.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Bin2BCD' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/bcd.vhd:12]
+INFO: [Synth 8-3491] module 'SevenSegmentDecoder' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:4' bound to instance 'u2' of component 'sevensegmentdecoder' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'SevenSegmentDecoder' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegmentDecoder' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:11]
+INFO: [Synth 8-3491] module 'SevenSegmentDecoder' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:4' bound to instance 'u3' of component 'sevensegmentdecoder' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:41]
+INFO: [Synth 8-3491] module 'SevenSegmentDecoder' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:4' bound to instance 'u4' of component 'sevensegmentdecoder' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:42]
+INFO: [Synth 8-3491] module 'SevenSegmentDecoder' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/seven_seg.vhd:4' bound to instance 'u5' of component 'sevensegmentdecoder' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'AFISARE_SOLD_CONT' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:12]
+INFO: [Synth 8-3491] module 'ADAUGARE_BANI' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:4' bound to instance 'C8' of component 'ADAUGARE_BANI' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'ADAUGARE_BANI' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:10]
+INFO: [Synth 8-3491] module 'MEM_RAM_SUMA' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:6' bound to instance 'return_suma_cont' of component 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:31]
+INFO: [Synth 8-3491] module 'sumator_16B' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:7' bound to instance 'adaugare' of component 'sumator_16B' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'sumator_16B' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:14]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'sumator_1Bit' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:42]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-3491] module 'sumator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd:34' bound to instance 'eth' of component 'sumator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'sumator_16B' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ADAUGARE_BANI' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:10]
+INFO: [Synth 8-3491] module 'SCADERE_BANI' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:4' bound to instance 'C9' of component 'SCADERE_BANI' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'SCADERE_BANI' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:10]
+INFO: [Synth 8-3491] module 'MEM_RAM_SUMA' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:6' bound to instance 'return_suma_cont' of component 'MEM_RAM_SUMA' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:31]
+INFO: [Synth 8-3491] module 'scazator_16B' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:6' bound to instance 'scadere' of component 'scazator_16B' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'scazator_16B' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:13]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'scazator_1Bit' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:42]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-3491] module 'scazator_1Bit' declared at 'C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd:34' bound to instance 'eth' of component 'scazator_1Bit' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'scazator_16B' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'SCADERE_BANI' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'MAIN' (0#1) [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:20]
+WARNING: [Synth 8-3848] Net semnal_pin in module/entity validare_pin does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:53]
+WARNING: [Synth 8-3848] Net pozitie in module/entity validare_pin does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element restd_reg was removed.  [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element RAM_AUX1_reg[7] was removed.  [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element rest_reg was removed.  [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:131]
+WARNING: [Synth 8-3848] Net poz_pin_semnal in module/entity verificare_suma_cont does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:28]
+WARNING: [Synth 8-3848] Net suma_depunere_semnal in module/entity verificare_suma_cont does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:27]
+WARNING: [Synth 8-3848] Net suma_retragere_semnal in module/entity verificare_suma_cont does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:27]
+WARNING: [Synth 8-3848] Net loc_pin_semnal in module/entity INTEROGARE_SOLD does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:28]
+WARNING: [Synth 8-3848] Net suma_depunere_semnal in module/entity INTEROGARE_SOLD does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:27]
+WARNING: [Synth 8-3848] Net suma_retragere_semnal in module/entity INTEROGARE_SOLD does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:27]
+WARNING: [Synth 8-3848] Net loc_pin_semnal in module/entity ADAUGARE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:28]
+WARNING: [Synth 8-3848] Net final_depunere_semnal in module/entity ADAUGARE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:27]
+WARNING: [Synth 8-3848] Net final_retragere_semnal in module/entity ADAUGARE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd:27]
+WARNING: [Synth 8-3848] Net loc_pin_semnal in module/entity SCADERE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:28]
+WARNING: [Synth 8-3848] Net final_depunere_semnal in module/entity SCADERE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:27]
+WARNING: [Synth 8-3848] Net final_retragere_semnal in module/entity SCADERE_BANI does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd:27]
+WARNING: [Synth 8-3848] Net A_RAM_BANC in module/entity MAIN does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:30]
+WARNING: [Synth 8-3848] Net A_RAM_PIN in module/entity MAIN does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:28]
+WARNING: [Synth 8-3848] Net A_RAM_SUME in module/entity MAIN does not have driver. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MAIN.vhd:28]
+WARNING: [Synth 8-7129] Port A_RAM[1] in module MEM_RAM_SUMA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[0] in module MEM_RAM_SUMA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[11] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[10] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[9] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[8] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[7] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[6] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[5] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[4] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[3] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[2] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[1] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[0] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[2] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[1] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[0] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CS_RAM in module MEM_RAM_BANC is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1441.297 ; gain = 560.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1441.297 ; gain = 560.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1441.297 ; gain = 560.516
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1441.297 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/facultate/proiect/ATM/ATM.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/facultate/proiect/ATM/ATM.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/facultate/proiect/ATM/ATM.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MAIN_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MAIN_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1543.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1543.527 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Organigrama'
+WARNING: [Synth 8-3936] Found unconnected internal register 'RAM_AUX_reg[6]' and it is trimmed from '12' to '4' bits. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:143]
+WARNING: [Synth 8-3936] Found unconnected internal register 'RAM_AUX_reg[5]' and it is trimmed from '12' to '4' bits. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:143]
+WARNING: [Synth 8-3936] Found unconnected internal register 'RAM_AUX_reg[4]' and it is trimmed from '12' to '4' bits. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:143]
+WARNING: [Synth 8-3936] Found unconnected internal register 'RAM_AUX_reg[3]' and it is trimmed from '12' to '4' bits. [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:143]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nx_state_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nx_state_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:64]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            introducere5 |                             0000 |                             0000
+           introducere10 |                             0001 |                             0001
+           introducere20 |                             0010 |                             0010
+           introducere50 |                             0011 |                             0011
+          introducere100 |                             0100 |                             0100
+          introducere200 |                             0101 |                             0101
+          introducere500 |                             0110 |                             0110
+         introducere_pin |                             0111 |                             0111
+introducere_suma_retragere |                             1000 |                             1000
+actualizare_cont_retragere |                             1001 |                             1010
+introducere_suma_depunere |                             1010 |                             1001
+actualizare_cont_depunere |                             1011 |                             1011
+           schimbare_pin |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Organigrama'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nx_state_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'sel_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/Organigrama.vhd:125]
+WARNING: [Synth 8-327] inferring latch for variable 'D_RAM_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[3]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[2]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[1]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[0]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'p_nou_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'poz_pin_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'verificat_pin_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/validare_pin.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'D_RAM_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[3]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[2]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[1]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[0]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[0]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[1]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:183]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[2]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:196]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[3]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:209]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[4]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:222]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[5]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:235]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_reg[6]' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:248]
+WARNING: [Synth 8-327] inferring latch for variable 'banc500_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:162]
+WARNING: [Synth 8-327] inferring latch for variable 'banc200_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:161]
+WARNING: [Synth 8-327] inferring latch for variable 'banc100_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:160]
+WARNING: [Synth 8-327] inferring latch for variable 'banc50_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd:159]
+WARNING: [Synth 8-327] inferring latch for variable 'existenta_suma_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'sold_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'seg0_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'an1_reg' [C:/facultate/proiect/ATM/ATM.srcs/sources_1/new/main_seg.vhd:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 8     
+	   3 Input    4 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 17    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 40    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 15    
+	               10 Bit    Registers := 9     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 7     
+	   2 Input   12 Bit        Muxes := 36    
+	   4 Input   10 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 40    
+	   8 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	  13 Input    4 Bit        Muxes := 1     
+	  19 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 5     
+	  13 Input    3 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 118   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port loc_pin[1] in module SCADERE_BANI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[0] in module SCADERE_BANI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[1] in module ADAUGARE_BANI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[0] in module ADAUGARE_BANI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[1] in module INTEROGARE_SOLD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[0] in module INTEROGARE_SOLD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[1] in module verificare_suma_cont is either unconnected or has no load
+WARNING: [Synth 8-7129] Port loc_pin[0] in module verificare_suma_cont is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[11] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[10] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[9] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[8] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[7] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[6] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[5] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[4] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[3] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[2] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[1] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_RAM[0] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[2] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[1] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[0] in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CS_RAM in module MEM_RAM_BANC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[1] in module MEM_RAM_SUMA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_RAM[0] in module MEM_RAM_SUMA is either unconnected or has no load
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[1][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[2][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \C1/P0/RAM_reg[3][2]  is always disabled
+WARNING: [Synth 8-3332] Sequential element (MAPARE_ORGANIGRAMA/sel_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (MAPARE_ORGANIGRAMA/sel_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (MAPARE_ORGANIGRAMA/sel_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/D_RAM_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/D_RAM_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/D_RAM_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/D_RAM_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[3][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[3][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[3][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[3][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[2][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[2][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[2][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[2][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[1][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[1][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[1][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/RAM_reg[1][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/p_nou_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/p_nou_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/p_nou_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P0/p_nou_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/D_RAM_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/D_RAM_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/D_RAM_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/D_RAM_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[3][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[3][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[3][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[3][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[2][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[2][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[2][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[2][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[1][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[1][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[1][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[1][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[0][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[0][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[0][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/RAM_reg[0][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/p_nou_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/p_nou_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/p_nou_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P1/p_nou_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/D_RAM_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/D_RAM_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/D_RAM_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/D_RAM_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[3][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[3][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[3][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[3][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[2][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[2][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[2][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[2][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[1][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[1][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[1][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[1][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[0][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[0][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[0][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/RAM_reg[0][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/p_nou_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/p_nou_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/p_nou_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P2/p_nou_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/D_RAM_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/D_RAM_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/D_RAM_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/D_RAM_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[3][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[3][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[3][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[3][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[2][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[2][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[2][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[2][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[1][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[1][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[1][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[1][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[0][3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[0][2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[0][1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/RAM_reg[0][0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/p_nou_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/p_nou_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/p_nou_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/P3/p_nou_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/poz_pin_reg[1]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C1/poz_pin_reg[0]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C2/D_RAM_reg[3]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C2/D_RAM_reg[2]) is unused and will be removed from module MAIN.
+WARNING: [Synth 8-3332] Sequential element (C2/D_RAM_reg[1]) is unused and will be removed from module MAIN.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    74|
+|3     |LUT1   |    78|
+|4     |LUT2   |   107|
+|5     |LUT3   |    88|
+|6     |LUT4   |    70|
+|7     |LUT5   |    98|
+|8     |LUT6   |   193|
+|9     |FDCE   |     1|
+|10    |FDPE   |     3|
+|11    |FDRE   |   380|
+|12    |FDSE   |     4|
+|13    |LD     |   127|
+|14    |LDCP   |     1|
+|15    |IBUF   |    19|
+|16    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 468 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1543.527 ; gain = 560.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1543.527 ; gain = 662.746
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1543.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1543.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 127 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+
+Synth Design complete | Checksum: 36c0beb1
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 266 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1543.527 ; gain = 1071.723
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1543.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/facultate/proiect/ATM/ATM.runs/synth_1/MAIN.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MAIN_utilization_synth.rpt -pb MAIN_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  5 16:24:32 2024...

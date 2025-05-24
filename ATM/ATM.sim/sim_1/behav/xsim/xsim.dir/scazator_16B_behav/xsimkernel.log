@@ -1,0 +1,7 @@
+Running: xsim.dir/scazator_16B_behav/xsimk.exe -simmode gui -wdb scazator_16B_behav.wdb -simrunnum 0 -socket 61339
+Design successfully loaded
+Design Loading Memory Usage: 10004 KB (Peak: 10004 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 10516 KB (Peak: 10516 KB)
+Simulation CPU Usage: 139 ms

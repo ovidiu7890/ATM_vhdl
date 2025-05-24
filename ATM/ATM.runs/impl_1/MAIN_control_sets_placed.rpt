@@ -1,0 +1,118 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Wed Jun  5 16:24:57 2024
+| Host         : ovi running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MAIN_control_sets_placed.rpt
+| Design       : MAIN
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   148 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |    15 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             142 |           51 |
+| No           | No                    | Yes                    |               4 |            1 |
+| No           | Yes                   | No                     |              62 |           16 |
+| Yes          | No                    | No                     |             205 |           75 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              87 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|                     Clock Signal                     |                     Enable Signal                    |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|  C1/verificat_pin_reg/G0                             |                                                      |                                                   |                1 |              1 |         1.00 |
+|  MAPARE_ORGANIGRAMA/enable_verificare_suma           |                                                      |                                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                       | f1/eqOp                                              |                                                   |                1 |              1 |         1.00 |
+|  c7/u0/CLK                                           |                                                      |                                                   |                1 |              2 |         2.00 |
+|  MAPARE_ORGANIGRAMA/nx_state__0                      |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/f1/CLK                           |                                                      | rst_IBUF                                          |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[0]_8[0] |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[3]_2[0] |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[3]_0[0] |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[3]_3[0] |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[3]_1[0] |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/q3_reg[0]                        |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/q3_reg_0[0]                      |                                                      |                                                   |                1 |              4 |         4.00 |
+|  MAPARE_ORGANIGRAMA/E[0]                             |                                                      |                                                   |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                       | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[0]_14[0] |                                                   |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                       | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[1]_6[0]  |                                                   |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                       | C4/i_reg[0]_0                                        | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[1]_4  |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[0][11]_i_1_n_1                            |                                                   |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[2][11]_i_1_n_1                            |                                                   |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[5][11]_i_1_n_1                            |                                                   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[4][11]_i_1_n_1                            |                                                   |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[1][11]_i_1_n_1                            |                                                   |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[6][11]_i_1_n_1                            |                                                   |                6 |             12 |         2.00 |
+|  clk_IBUF_BUFG                                       | C4/state1_reg_0                                      | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[0]_13 |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[4]_3                                     |                                                   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[5]_1                                     |                                                   |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[6]_0                                     |                                                   |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[1]_5                                     |                                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[2]_4                                     |                                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[0]_6                                     |                                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/RAM_AUX1[3]_2                                     |                                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/nr_banc[3][11]_i_1_n_1                            |                                                   |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                       | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[1]_5[0]  |                                                   |               10 |             16 |         1.60 |
+|  we_retragere                                        |                                                      |                                                   |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                       |                                                      |                                                   |               14 |             28 |         2.00 |
+|  clk_IBUF_BUFG                                       |                                                      | MAPARE_ORGANIGRAMA/f1/tmp                         |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG                                       |                                                      | c7/u0/tmp                                         |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG                                       | C4/i                                                 | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[1]_0  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                                       | C4/count                                             | MAPARE_ORGANIGRAMA/FSM_sequential_state_reg[0]_1  |                8 |             32 |         4.00 |
+|  n_0_337_BUFG                                        |                                                      |                                                   |               19 |             56 |         2.95 |
++------------------------------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+
+

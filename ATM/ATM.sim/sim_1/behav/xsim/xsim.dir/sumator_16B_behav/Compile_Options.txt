@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sumator_16B_behav" "xil_defaultlib.sumator_16B" -log "elaborate.log" 

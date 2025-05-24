@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun  5 16:24:39 2024
+# Process ID: 4408
+# Current directory: C:/facultate/proiect/ATM/ATM.runs/impl_1
+# Command line: vivado.exe -log MAIN.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MAIN.tcl -notrace
+# Log file: C:/facultate/proiect/ATM/ATM.runs/impl_1/MAIN.vdi
+# Journal file: C:/facultate/proiect/ATM/ATM.runs/impl_1\vivado.jou
+# Running On: ovi, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 34025 MB
+#-----------------------------------------------------------
+source MAIN.tcl -notrace

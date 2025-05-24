@@ -1,0 +1,37 @@
+Vivado Simulator v2023.2.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MAIN_behav xil_defaultlib.MAIN -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MPG [mpg_default]
+Compiling architecture divizor of entity xil_defaultlib.divizor [\divizor(n=5)\]
+Compiling architecture organigrama of entity xil_defaultlib.Organigrama [organigrama_default]
+Compiling architecture mem_ram_pin of entity xil_defaultlib.MEM_RAM_PIN [mem_ram_pin_default]
+Compiling architecture validare of entity xil_defaultlib.validare_pin [validare_pin_default]
+Compiling architecture mem_ram_suma of entity xil_defaultlib.MEM_RAM_SUMA [mem_ram_suma_default]
+Compiling architecture mem_ram_banc of entity xil_defaultlib.MEM_RAM_BANC [mem_ram_banc_default]
+Compiling architecture verificare_suma_cont of entity xil_defaultlib.verificare_suma_cont [verificare_suma_cont_default]
+Compiling architecture interogare_sold of entity xil_defaultlib.INTEROGARE_SOLD [interogare_sold_default]
+Compiling architecture divizor of entity xil_defaultlib.divizor [\divizor(n=5000)\]
+Compiling architecture behavioral of entity xil_defaultlib.Bin2BCD [bin2bcd_default]
+Compiling architecture behavioral of entity xil_defaultlib.SevenSegmentDecoder [sevensegmentdecoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.AFISARE_SOLD_CONT [afisare_sold_cont_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumator_1Bit [sumator_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.sumator_16B [sumator_16b_default]
+Compiling architecture adaugare_bani of entity xil_defaultlib.ADAUGARE_BANI [adaugare_bani_default]
+Compiling architecture behavioral of entity xil_defaultlib.scazator_1Bit [scazator_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.scazator_16B [scazator_16b_default]
+Compiling architecture scadere_bani of entity xil_defaultlib.SCADERE_BANI [scadere_bani_default]
+Compiling architecture main of entity xil_defaultlib.main
+Built simulation snapshot MAIN_behav

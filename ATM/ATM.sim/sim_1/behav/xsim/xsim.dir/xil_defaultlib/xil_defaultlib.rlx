@@ -1,0 +1,24 @@
+0.7
+2020.2
+Feb  9 2024
+00:36:40
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/ADAUGARE_BANI.vhd,1717588312,vhdl,,,,adaugare_bani,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/INTEROGARE_SOLD.vhd,1717585982,vhdl,,,,interogare_sold,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MAIN.vhd,1717701965,vhdl,,,,main,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MEM_RAM_BANC.vhd,1717592452,vhdl,,,,mem_ram_banc,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MEM_RAM_PIN.vhd,1715704744,vhdl,,,,mem_ram_pin,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MEM_RAM_SUMA.vhd,1717588186,vhdl,,,,mem_ram_suma,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MPG.vhd,1717573788,vhdl,,,,mpg,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/MUX.vhd,1716476224,vhdl,,,,mux,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/Organigrama.vhd,1717702022,vhdl,,,,organigrama,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/SCADERE_BANI.vhd,1717586880,vhdl,,,,scadere_bani,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/bcd.vhd,1717586364,vhdl,,,,bin2bcd,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/divizor.vhd,1717591368,vhdl,,,,divizor,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/main_seg.vhd,1717591462,vhdl,,,,afisare_sold_cont,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/scazator_16B.vhd,1717586820,vhdl,,,,scazator_16b,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/scazator_1Bit.vhd,1715700286,vhdl,,,,scazator_1bit,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/seven_seg.vhd,1717573968,vhdl,,,,sevensegmentdecoder,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/sumator_16B.vhd,1717586252,vhdl,,,,sumator_16b,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/sumator_1Bit.vhd,1715700210,vhdl,,,,sumator_1bit,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/validare_pin.vhd,1717702239,vhdl,,,,validare_pin,,,,,,,,
+C:/facultate/proiect/atm_final/ATM/ATM.srcs/sources_1/new/verificare_suma_cont.vhd,1717588796,vhdl,,,,verificare_suma_cont,,,,,,,,
