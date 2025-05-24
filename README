@@ -1,0 +1,16 @@
+## Overview
+
+This project implements a simple ATM (Automated Teller Machine) system on a Nexys A7 FPGA board. 
+The system allows a user to:
+
+- Deposit money
+- Withdraw money
+- Check their account balance
+
+The goal of this project was to gain hands-on experience with hardware-level design using VHDL and to deepen understanding of digital systems and hardware behavior.
+
+## Features
+
+- Simple user interface through switches and 7-segment display
+- VHDL-based design with modular architecture
+- Synchronous operations for accurate state handling
